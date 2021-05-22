@@ -220,7 +220,7 @@ MonoBehaviour:
   damage: 10
   explosionRange: 0
   explosionForce: 0
-  maxCollisions: 1
+  maxCollisions: 0
   maxLifeTime: 20
   destroyDelay: 0.01
   onTouch: 1
