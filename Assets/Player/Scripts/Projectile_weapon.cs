@@ -30,7 +30,7 @@ public class Projectile_weapon : MonoBehaviour
 
     //bug fixing
     public bool allowInvoke = true;
-
+    [SerializeField] private LayerMask weaponMask;
 
     
 
@@ -111,7 +111,7 @@ public class Projectile_weapon : MonoBehaviour
 
         //check if ray hits something
         Vector3 targetPoint;
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, 1 <<weaponMask))
             targetPoint = hit.point;
         else
             targetPoint = ray.GetPoint(75); //just a far away point

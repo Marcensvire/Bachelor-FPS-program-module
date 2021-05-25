@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4256527454251152592}
   - component: {fileID: 8569674219493889767}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Chamber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7747482387829299643}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Magazine 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8665272776765179943}
   - component: {fileID: 3906140975016917107}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 1082198184080692618}
   - component: {fileID: 3753664527990307894}
   - component: {fileID: 5410630742161551767}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Pw_Vityaz
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -302,6 +302,9 @@ MonoBehaviour:
   camera: {fileID: 0}
   attackPoint: {fileID: 2252067969514994396}
   allowInvoke: 1
+  weaponMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &7573777542730557719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8670279253463653696}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5053877262504281626}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3204875467781271987}
   - component: {fileID: 5023305115959274619}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526598694207847027}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2252067969514994396}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: AttckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,6 +733,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802626256356502, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802627784572813, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8337d54a3197d48a0cf5a6e047a6e3, type: 3}

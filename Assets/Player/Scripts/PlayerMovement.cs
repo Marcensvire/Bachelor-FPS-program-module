@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
-
 {
-
     private PlayerControls controls;
 
 
@@ -19,10 +17,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 move; //to represent movementsame as look  
 
 
-    Vector2 currentDir = Vector2.zero;
-    Vector2 currentDirVelocity = Vector2.zero;
-
-    Vector3 verticalVelocity;
+    [SerializeField] Vector2 currentDir = Vector2.zero;
+    [SerializeField] Vector2 currentDirVelocity = Vector2.zero;
+    [SerializeField] Vector3 verticalVelocity;
 
     private float height;
     private float originalHeight;
@@ -38,11 +35,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float timeToProne = 0.9f;
 
     [SerializeField] private float gravity = -9.81f;
-
-    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
-
     [SerializeField] private float jumpHeight = 3f;
 
+    [SerializeField] [Range(0.0f, 5f)] float moveSmoothTime = 0.3f;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundDistance = 0.1f;
@@ -218,19 +213,15 @@ public class PlayerMovement : MonoBehaviour
         move.Normalize(); //So diagonal movement has the same speed as other directions
 
         currentDir = Vector2.SmoothDamp(currentDir, move, ref currentDirVelocity, moveSmoothTime); //smoothing from currentDir to *move* value 
-
         Vector3 velocity = (currentDir.y * transform.forward + currentDir.x * transform.right)* movementSpeed;
-
         characterController.Move(velocity  * Time.deltaTime);
 
         verticalVelocity.y += gravity * Time.deltaTime;
-
         characterController.Move(verticalVelocity * Time.deltaTime);
 
         if (!isGrounded && characterController.collisionFlags == CollisionFlags.Above)
         {
             verticalVelocity.y = -verticalVelocity.y;
-
         }
     }
 
@@ -239,7 +230,6 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateMovement();
         UpdateCrouch();
-        //UpdateProne();
     }
 
 

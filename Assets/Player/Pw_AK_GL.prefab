@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3339666917762331703}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1164495800622313325}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3303571820957174865}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8823085022497757380}
   - component: {fileID: 1422496700380775692}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838120790088897284}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3335724744216977744}
   - component: {fileID: 6935124307555127556}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7861558165642239399}
   - component: {fileID: 2370719801774096272}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Chamber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4435890027323601100}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Magazine 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 7715636949135834883}
   - component: {fileID: 2584144083857177501}
   - component: {fileID: 6304438044297992645}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Pw_AK_GL
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -513,6 +513,9 @@ MonoBehaviour:
   camera: {fileID: 0}
   attackPoint: {fileID: 3303571820957174865}
   allowInvoke: 1
+  weaponMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &7455694031639298763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +732,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802626256356502, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802627784572813, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8337d54a3197d48a0cf5a6e047a6e3, type: 3}

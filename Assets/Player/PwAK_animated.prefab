@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7406803172208522886}
   - component: {fileID: 2935815984838149842}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2709270021415914097}
   - component: {fileID: 7522949663726217286}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Chamber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8435222031722817306}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Magazine 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2441542383155725852}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 7690641823709679553}
   - component: {fileID: 5954036266023526180}
   - component: {fileID: 1712639589}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: PwAK_animated
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -332,6 +332,9 @@ MonoBehaviour:
   camera: {fileID: 0}
   attackPoint: {fileID: 2441542383155725852}
   allowInvoke: 1
+  weaponMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &3956235097151264114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,7 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6388779417588988091}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7410812391868982241}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839053801311651026}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3670850213414522642}
   - component: {fileID: 6574453857884934874}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,6 +732,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802626256356502, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762802627784572813, guid: ed8337d54a3197d48a0cf5a6e047a6e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8337d54a3197d48a0cf5a6e047a6e3, type: 3}
