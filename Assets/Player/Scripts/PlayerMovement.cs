@@ -49,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float camTransformDivider=2f;
 
+    [SerializeField] public bool hasStamina, isJumping;
+
     private void Awake()
     {
         controls = new PlayerControls();
@@ -75,14 +77,15 @@ public class PlayerMovement : MonoBehaviour
         targetHeight = height;
         originalHeight = height;
         targetSpeed = timeToCrouch;
+        hasStamina = true;
     }
 
     void Jump()
     {
-        if (isGrounded && !isCrouching && !isProne)  //So player cannot jump from crouching/prone position, to allow it leave only if statement and remove !isCrouching and !isProne from if
+        if (isGrounded && !isCrouching && !isProne && hasStamina)  //So player cannot jump from crouching/prone position, to allow it leave only if statement and remove !isCrouching and !isProne from if
         {
+            isJumping = true;
             verticalVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-
         }
         else if (isCrouching) // Call Crouch function which will make character stand up instead of jumping when pressing jump button while crouching
         {
@@ -96,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Sprint(bool check)
     {
-        if (check && isGrounded && !isCrouching && !isProne) // doesn't allow to sprint in air and if crouching, to allow sprint in air remove isGrounded, to allow sprint from crouching position remove !isCrouching
+        if (check && isGrounded && !isCrouching && !isProne && hasStamina) // doesn't allow to sprint in air and if crouching, to allow sprint in air remove isGrounded, to allow sprint from crouching position remove !isCrouching
         {
             movementSpeed = runSpeed;
             isRunning = true;
