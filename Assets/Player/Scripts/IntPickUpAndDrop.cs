@@ -68,13 +68,6 @@ public class IntPickUpAndDrop : Interactable
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public override void OnInteraction()
     {
         Debug.Log("I have Interacted pick up and drop");

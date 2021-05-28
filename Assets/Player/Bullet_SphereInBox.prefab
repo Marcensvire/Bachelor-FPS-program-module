@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6362404031191438096}
   - component: {fileID: 4744695696045929972}
   - component: {fileID: 6633669989588073079}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6964274119383481503}
   - component: {fileID: 2312336700089401683}
   - component: {fileID: 8134226324922871039}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet_SphereInBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

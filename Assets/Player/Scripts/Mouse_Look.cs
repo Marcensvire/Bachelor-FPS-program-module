@@ -44,12 +44,6 @@ public class Mouse_Look : MonoBehaviour
         controls.Disable();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

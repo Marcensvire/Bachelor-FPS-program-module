@@ -6,7 +6,6 @@ public class RecoverItem : MonoBehaviour
 {
     private PlayerControls controls;
     [SerializeField] PlayerStats playerStats;
-    [SerializeField] IntPickUpAndDrop equipScript;
     [SerializeField] private float heal, food, water, charges;
     // Start is called before the first frame update
 
@@ -23,13 +22,11 @@ public class RecoverItem : MonoBehaviour
         
         controls.WorldActions.Shoot.performed += context => Input();
         playerStats = GameObject.Find("FirstPersonPlayer").GetComponent<PlayerStats>();
-        equipScript = GetComponent<IntPickUpAndDrop>();
 
     }
 
     new private void Input()
     {
-        Debug.Log("dsdf");
         if (charges > 0)
         {
             playerStats.Heal(heal);
@@ -41,9 +38,5 @@ public class RecoverItem : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

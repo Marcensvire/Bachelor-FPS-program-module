@@ -153,8 +153,11 @@ public class Projectile_weapon : MonoBehaviour
 
     private void Reload()
     {
-        reloading = true;
-        Invoke("ReloadFinished", reloadTime);
+        if (bulletsLeft < magazineSize)
+        {
+            reloading = true;
+            Invoke("ReloadFinished", reloadTime);
+        }
     }
 
     private void ReloadFinished()
